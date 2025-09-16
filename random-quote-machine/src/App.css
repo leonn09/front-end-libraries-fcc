@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+#quote-box {
+  background: #6c757d;
+  border: 1px solid rgb(84.3605150215, 91.3905579399, 97.6394849785);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#author {
+  font-size: 1.2rem;
+  color: rgb(60.7210300429, 65.7811158798, 70.2789699571);
+}
+
+#new-quote {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#tweet-quote {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-inline-start: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}/*# sourceMappingURL=App.css.map */
