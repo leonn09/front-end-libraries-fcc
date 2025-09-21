@@ -1,0 +1,125 @@
+$markdown-font-stack: system-ui, Avenir, Helvetica, Arial, sans-serif;
+$code-font-stack: 'Courier New', Courier, monospace;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$base-spacing: 1rem;
+$border-radius: 5px;
+$border-color: #ccc;
+$primary-color: #4CAF50;
+$secondary-color: #f4f4f4;
+$background-color: #fff;
+$text-color: #333;
+$header-bg-color: #f8f8f8;
+$header-text-color: #000;
+$editor-bg-color: #f0f0f0;
+$preview-bg-color: #fff;
+$max-width: 1200px;
+$padding: 1rem;
+$margin: 1rem auto;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$transition-duration: 0.3s;
+$transition-ease: ease-in-out;
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 900px;
+$breakpoint-desktop: 1200px;
+
+body {
+    font-family: $markdown-font-stack;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+code {
+    font-family: $code-font-stack;
+    background-color: $secondary-color;
+    padding: 0.2rem 0.4rem;
+    border-radius: $border-radius;
+}
+
+pre {
+    background-color: $secondary-color;
+    padding: $base-spacing;
+    border-radius: $border-radius;
+    overflow-x: auto;
+}
+
+.container {
+    max-width: $max-width;
+    margin: $margin;
+    padding: $padding;
+}
+
+header {
+    background-color: $header-bg-color;
+    color: $header-text-color;
+    padding: $base-spacing;
+    text-align: center;
+    box-shadow: $box-shadow;
+}
+
+#editor {
+    background-color: $editor-bg-color;
+    padding: $base-spacing;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    width: 95%;
+    height: 15rem;
+    resize: vertical;
+    font-family: $markdown-font-stack;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    border: 1px solid $border-color;
+}
+
+#preview {
+    text-align: left;
+    background-color: $preview-bg-color;
+    padding: $base-spacing;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    width: 95%;
+    min-height: 30rem;
+    border: 1px solid $border-color;
+    overflow-y: auto;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .container {
+        padding: $base-spacing / 2;
+    }
+
+    #editor, #preview {
+        height: 200px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    #editor, #preview {
+        height: 150px;
+    }
+}
+
